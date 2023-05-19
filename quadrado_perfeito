@@ -1,0 +1,22 @@
+from math import sqrt
+def main():
+    numero = int(input('Digite um número de 4 dígitos: '))
+    
+    verificar_quadrado_perfeito(numero)
+
+
+def verificar_quadrado_perfeito(numero):
+    parte1 = numero // 100
+    parte2 = numero % 100
+    
+    soma = parte1 + parte2
+    
+    raiz = sqrt(numero)
+    
+    if soma == raiz:
+        print('O número é quadrado perfeito.')
+    else:
+        print('O número não é quadrado perfeito.')
+
+
+main()
